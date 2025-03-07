@@ -1,5 +1,5 @@
 .hero__block {
-  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 
 .hero__header {
@@ -8,9 +8,14 @@
   padding: 16px 15px;
 }
 
+.hero__header picture {
+  display: flex;
+}
+
 .hero__header-link {
   text-decoration: none;
   display: inline-block;
+  letter-spacing: 0.6px;
 }
 
 .hero__content {
