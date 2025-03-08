@@ -92,11 +92,14 @@
           <source width="320" height="170" type="image/webp" srcset="./img/about_video_image@1x.webp 1x, ./img/about_video_image@2x.webp 2x">
           <source media="(min-width:1366px)" width="360" height="230" type="image/jpg" srcset="./img/about_video_image@1x.jpg 1x, ./img/about_video_image@2x.jpg 2x">
           <source media="(min-width: 768px)" width="270" height="170" type="image/jpg" srcset="./img/about_video_image@1x.jpg 1x, ./img/about_video_image@2x.jpg 2x">
-          <img src="./img/about_video_image@1x.jpg" srcset="./img/about_video_image@2x.jpg 2x" width="320" height="170" alt="Видео-ролик тренажерного зала SUPERGYM.">
+          <img class="about__video-image" src="./img/about_video_image@1x.jpg" srcset="./img/about_video_image@2x.jpg 2x" width="320" height="170" alt="Видео-ролик тренажерного зала SUPERGYM.">
         </picture>
-        <!-- <a class="about__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" data-href="https://www.youtube.com/embed/9TZXsZItgdw">
+        <button class="about__video-button" type="button">
+          <svg width="12" height="12" viewBox="0 0 14 16" fill="#ffffff">
+            <path d="m13.5 8-13 7.5v-15l13 7.5Z" />
+          </svg>
           <span class="visually-hidden">Включить видео</span>
-          </a> -->
+        </button>
       </div>
     </section>
   </main>
@@ -106,7 +109,9 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
+  <!-- примеры требуемых атрибутов data-test="*"
+    href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" data-href="https://www.youtube.com/embed/9TZXsZItgdw">
+  -->
 
   <div data-test="about">about</div>
   <div data-test="price">price</div>
