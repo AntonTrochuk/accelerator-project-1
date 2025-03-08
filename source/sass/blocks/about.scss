@@ -1,0 +1,41 @@
+.about {
+  color: $color-text-basic;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__paragraph-container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin: 40px 0 12px;
+}
+
+.about__subtitle {
+  margin: 0 0 36px;
+}
+
+.about__paragraph-container p span:nth-last-child(1) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.about__paragraph-container p {
+  margin: 0 0 36px;
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.about__image {
+  display: flex;
+  background-size: contain;
+  margin: 0 0 36px;
+}
