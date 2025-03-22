@@ -48,3 +48,26 @@ const juriSlider = new Swiper(juriSwiper, {
 });
 
 juriSlider.update();
+
+
+const reviewsSwiper = document.querySelector('.reviews__swiper');
+const reviewsSlider = new Swiper(reviewsSwiper, {
+
+  modules: [Navigation],
+
+  watchOverflow: true,
+  speed: 500,
+  effect: 'fade',
+
+  breakpoints: {
+    slidesPerView: 1,
+  },
+
+  navigation: {
+    nextEl: '.reviews__swiper-button--next',
+    prevEl: '.reviews__swiper-button--prev',
+    lockClass: 'disabled',
+  },
+});
+
+reviewsSlider.update();
