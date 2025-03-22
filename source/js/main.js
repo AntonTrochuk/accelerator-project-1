@@ -5,9 +5,11 @@
 
 import { playVideo } from './hero-play-video';
 import { priceTab } from './price-tab';
+import { faqTub } from './faq-tab';
 
 playVideo();
 priceTab();
+faqTub();
 
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
