@@ -123,13 +123,33 @@
   color: $color-light-text;
   padding: 0;
   cursor: pointer;
+
+  &:not(.tabs-button--active):hover {
+    color: $color-price-tabs-hover;
+    padding: 0 0 8px;
+    border-bottom: 2px solid $color-price-border-hover;
+  }
+
+  &:not(.tabs-button--active):focus {
+    color: $color-text-basic;
+    border-bottom: 2px solid $color-text-basic;
+    padding: 0 0 8px;
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-price-button-disabled;
+    border-bottom: 2px solid $color-price-button-disabled;
+    padding: 0 0 8px;
+  }
 }
 
 .tabs-button--active {
   color: $color-text-basic;
-  border-bottom: 2px solid $color-state-tabs;
+  border-bottom: 2px solid $color-banners;
   padding: 0 0 7px;
   box-sizing: border-box;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 8px;
@@ -246,5 +266,33 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
+  }
+
+  &:hover {
+    background-image: $color-price-button-gradient;
+    border: none;
+    padding: 27px 0;
+    color: $color-text-dark-background;
+  }
+
+  &:focus {
+    background-image: $color-price-button-focus-gradient;
+    color: $color-text-dark-background;
+    border-color: $color-hero-button-focus-border;
+    outline: none;
+  }
+
+  &:active {
+    border: none;
+    padding: 27px 0;
+    outline: none;
+    background-image: $color-price-button-gradient;
+    color: $color-white-opacity;
+  }
+
+  &:disabled {
+    background-color: $color-text-dark-background;
+    color: $color-price-button-disabled;
+    border-color: $color-hero-button-active;
   }
 }

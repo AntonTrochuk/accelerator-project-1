@@ -176,4 +176,29 @@
     margin: 0;
     width: 270px;
   }
+
+  &:hover {
+    background-color: $color-text-dark-background;
+    color: $color-text-additional-accent;
+  }
+
+  &:focus {
+    background-color: $color-hero-button-focus;
+    color: $color-text-additional-accent;
+    border-color: $color-hero-button-focus-border;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-text-dark-background;
+    color: $color-hero-button-active;
+    border-color: $color-text-dark-background;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $color-hero-button-disabled;
+    border-color: $color-hero-button-disabled;
+  }
 }
