@@ -139,7 +139,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 222px;
+    top: 225px;
     z-index: 10;
   }
 
@@ -148,7 +148,7 @@
     border-radius: 50%;
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid $color-text-basic;
     border-radius: 50%;
     background-color: $color-price-shadow;
@@ -175,7 +175,7 @@
   background-size: 16px 32px;
 
   @media (min-width: $tablet-width) {
-    right: -54px;
+    right: -71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,7 +195,7 @@
   background-size: 16px 32px;
 
   @media (min-width: $tablet-width) {
-    left: -54px;
+    left: -71px;
   }
 
   @media (min-width: $desktop-width) {
