@@ -234,13 +234,13 @@
     margin: 0 0 78px;
     width: 175px;
     overflow: hidden;
-    padding-bottom: 100px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 24px;
       margin: 0;
       width: 195px;
+      padding-bottom: 100px;
     }
   }
 
